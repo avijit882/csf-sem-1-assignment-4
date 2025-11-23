@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Avijit — Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style2.css">
+  
+  <!-- Meta -->
+  <meta name="description" content="Responsive one-page portfolio using Flexbox, CSS Grid, media queries and animations.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo" role="img" aria-label="Avijit B logo">
+        <a href="#hero"><span class="logo-initials">AB</span> <span class="logo-name">Avijit</span></a>
+         
+      </div>
+
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Hello, I'm <span class="accent-name">Avijit B</span></h1>
+          <h2 class="role">I am a <span class="animated-role">Full Stack Developer</span></h2>
+          <p class="lead">
+            I build responsive web applications, enjoy solving complex problems with clean code,
+            and love learning new tools in AIML and web development.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn">See Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-image" aria-hidden="true">
+          <!-- Placeholder circle profile -->
+          <div class="profile-card">
+            <img src="MYPHOTO.jpg" alt="MY PHOTO ">
+                  
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <div class="container">
+        <h3 class="section-title">About Me</h3>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I'm a student and developer working on web and AIML topics. I focus on building accessible,
+              responsive user interfaces and enjoy exploring machine learning integrations.
+            </p>
+            <ul class="about-list">
+              <li><strong>Location:</strong> India</li>
+              <li><strong>Roll No:</strong> 2501730308</li>
+              <li><strong>Interests:</strong> Web Dev, AIML, Matrices & Computational Math</li>
+            </ul>
+          </div>
+
+          <div class="about-cards">
+            <div class="stat-card">
+              <h4>4+</h4>
+              <p>Projects</p>
+            </div>
+            <div class="stat-card">
+              <h4>2</h4>
+              <p>Competitions</p>
+            </div>
+            <div class="stat-card">
+              <h4>100%</h4>
+              <p>Effort</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h3 class="section-title">Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h4>HTML &amp; CSS</h4>
+            <p>Semantic markup, responsive layouts, BEM style structure.</p>
+          </div>
+          <div class="skill-card">
+            <h4>JavaScript</h4>
+            <p>DOM, ES6+, async, fetch, small UI logic.</p>
+          </div>
+          <div class="skill-card">
+            <h4>Flexbox &amp; Grid</h4>
+            <p>Modern layout techniques for responsive UIs.</p>
+          </div>
+          <div class="skill-card">
+            <h4>Python & AIML</h4>
+            <p>Foundational libraries and project experience.</p>
+          </div>
+          <div class="skill-card">
+            <h4>Git & GitHub</h4>
+            <p>Version control and collaborative workflows.</p>
+          </div>
+          <div class="skill-card">
+            <h4>Mathematics</h4>
+            <p>Linear algebra, matrices, SVD, eigenvectors.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h3 class="section-title">Projects</h3>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-thumb"> <!-- simple colored block -->
+              <svg viewBox="0 0 400 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="100%" height="100%" fill="#ede9fe"></rect>
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#6d28d9" font-size="22">Portfolio Site</text>
+              </svg>
+            </div>
+            <div class="project-body">
+              <h4>Responsive Portfolio</h4>
+              <p>One-page responsive portfolio using Flexbox, Grid & animations.</p>
+              <div class="project-actions">
+                <a class="btn btn-sm" href="#" aria-label="View project">View</a>
+                <a class="btn btn-sm btn-outline" href="#" aria-label="Source code">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-thumb">
+              <svg viewBox="0 0 400 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="100%" height="100%" fill="#fef3c7"></rect>
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#b45309" font-size="22">Matrix Visualizer</text>
+              </svg>
+            </div>
+            <div class="project-body">
+              <h4>Matrix Visualizer</h4>
+              <p>Tool to visualize matrix operations and SVD decomposition.</p>
+              <div class="project-actions">
+                <a class="btn btn-sm" href="#">Live</a>
+                <a class="btn btn-sm btn-outline" href="#">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-thumb">
+              <svg viewBox="0 0 400 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="100%" height="100%" fill="#ecfeff"></rect>
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#0369a1" font-size="22">AIML Demo</text>
+              </svg>
+            </div>
+            <div class="project-body">
+              <h4>AIML Demo</h4>
+              <p>Small notebook-style demo integrating a ML model for classification.</p>
+              <div class="project-actions">
+                <a class="btn btn-sm" href="#">View</a>
+                <a class="btn btn-sm btn-outline" href="#">Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h3 class="section-title">Contact</h3>
+        <div class="contact-grid">
+          <form id="contactForm" class="contact-form" novalidate>
+            <label>
+              <span class="label-text">Name</span>
+              <input type="text" name="name" id="name" required placeholder="Your name">
+            </label>
+
+            <label>
+              <span class="label-text">Email</span>
+              <input type="email" name="email" id="email" required placeholder="usermail@.com">
+            </label>
+
+            <label>
+              <span class="label-text">Message</span>
+              <textarea name="message" id="message" rows="5" required placeholder="Your message"></textarea>
+            </label>
+
+            <div class="form-actions">
+              <button type="submit" class="btn">Send Message</button>
+              <button type="reset" class="btn btn-outline">Reset</button>
+            </div>
+
+            <p class="form-status" id="formStatus" aria-live="polite"></p>
+          </form>
+
+          <div class="contact-details">
+            <h4>Get in touch</h4>
+            <p>Email: <a href="mailto:avijitb8888@gmail.com">avijitb8888@example.com</a></p>
+            <p>Github: <a href="#" target="_blank" rel="noopener">https://github.com/avijit882</a></p>
+             
+            <div class="social">
+              <a aria-label="GitHub" href="#">GitHub</a>
+               
+               
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Avijit. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="#hero">Top</a>
+        <a href="#projects">Projects</a>
+        <a href="/mnt/data/Lab 3 unit-wise.docx" title="Assignment doc (local)">Assignment Doc</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script1.js"></script>
+</body>
+</html>
